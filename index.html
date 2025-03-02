@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Spiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="lobby-container" class="container">
+        <h1>Willkommen zum Party Spiel</h1>
+        <button id="create-lobby">Lobby Erstellen</button>
+        <input type="text" id="join-code" placeholder="Gib Lobby-Code ein">
+        <button id="join-lobby">Lobby Beitreten</button>
+        <div id="lobby-code-display" style="display:none">
+            <p>Dein Lobby-Code: <span id="lobby-code"></span></p>
+            <button id="start-game" style="display:none">Spiel Starten</button>
+        </div>
+    </div>
+
+    <div id="game-container" class="container" style="display:none">
+        <h2 id="question"></h2>
+        <div id="answers">
+            <!-- Hier kommen die Antwortmöglichkeiten -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
